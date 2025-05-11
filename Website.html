@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Era - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Deeper dark background */
+            color: #cbd5e1; /* Slightly lighter text for contrast */
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Custom background pattern or gradient */
+        .section-bg {
+            background-color: #1e293b;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2394a3b8' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-overlay {
+             background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4)); /* Darker gradient overlay */
+        }
+        /* Style for the hero section background image */
+        #home {
+            background-size: contain; /* Change from cover to contain */
+            background-repeat: no-repeat; /* Prevent repeating */
+            background-position: center; /* Center the image */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-gray-900 text-white shadow-xl fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                 <img src="Images/PNG.png" alt="New Era Team Logo" class="h-16 w-auto inline-block mr-3">
+                <div class="text-3xl font-bold text-blue-500 hover:text-blue-400 transition duration-300 ease-in-out">
+                    New Era
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">About</a>
+                <a href="#team" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">Team</a>
+                <a href="#schedule" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">Schedule</a>
+                <a href="#news" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">News</a>
+                <a href="#contact" class="hover:text-blue-500 transition duration-300 ease-in-out text-lg">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+         <div id="mobile-menu" class="md:hidden bg-gray-800 px-6 py-4 hidden">
+            <nav class="flex flex-col space-y-4">
+                <a href="#home" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">About</a>
+                <a href="#team" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">Team</a>
+                <a href="#schedule" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">Schedule</a>
+                <a href="#news" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">News</a>
+                <a href="#contact" class="block text-white hover:text-blue-500 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-cover bg-center h-[600px] flex items-center justify-center pt-16" style="background-image: url(Images/PNG.png);">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center text-white px-6">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-pulse">
+                Welcome to <span class="text-blue-500">New Era</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">
+                Forging victory in the digital arena.
+            </p>
+            <a href="#team" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                Meet the Champions
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-500">About Our Legacy</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        Founded in 2025, New Era has quickly risen through the ranks, driven by a passion for competitive gaming and a commitment to excellence. We are more than just a team; we are a family united by the thrill of competition and the pursuit of victory.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300 mt-6">
+                        Our journey is marked by dedication, strategic prowess, and unforgettable moments. We strive to inspire and entertain, pushing the boundaries of what's possible in esports. Join us as we continue to write our story.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="Images/PNG.png" alt="About Us" class="rounded-lg shadow-xl w-full transform transition duration-300 ease-in-out hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-500">Meet Our Roster</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+1" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 1</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+2" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 2</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+3" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 3</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+4" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 4</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+5" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 5</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/400x400/1a202c/cbd5e1?text=Player+6" alt="Player Name" class="w-full h-64 object-cover object-top">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Player Name 6</h3>
+                        <p class="text-blue-400 text-lg">[In-Game Name]</p>
+                        <p class="text-gray-400 text-sm mt-1">Role: [Role] | Game: [Game]</p>
+                        <div class="mt-5 flex justify-center space-x-5">
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-youtube text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-500">Upcoming Battles</h2>
+            <div class="bg-gray-900 rounded-lg shadow-xl p-8">
+                <div class="border-b border-gray-700 pb-6 mb-6 last:border-b-0 last:mb-0 last:pb-0">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-xl font-semibold text-white">[Game Name]</p>
+                            <p class="text-gray-400 text-sm">Tournament Name | Stage: [Stage]</p>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <p class="text-lg font-bold text-blue-500">Date: [Date]</p>
+                            <p class="text-gray-400 text-sm">Time: [Time] ([Timezone])</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-col md:flex-row justify-center md:justify-start space-y-3 md:space-y-0 md:space-x-6">
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-video mr-2"></i>Watch Live</a>
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-info-circle mr-2"></i>Details</a>
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-calendar-alt mr-2"></i>Add to Calendar</a>
+                    </div>
+                </div>
+                 <div class="border-b border-gray-700 pb-6 mb-6 last:border-b-0 last:mb-0 last:pb-0">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="mb-4 md:mb-0">
+                            <p class="text-xl font-semibold text-white">[Game Name]</p>
+                            <p class="text-gray-400 text-sm">Tournament Name | Stage: [Stage]</p>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <p class="text-lg font-bold text-blue-500">Date: [Date]</p>
+                            <p class="text-gray-400 text-sm">Time: [Time] ([Timezone])</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-col md:flex-row justify-center md:justify-start space-y-3 md:space-y-0 md:space-x-6">
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-video mr-2"></i>Watch Live</a>
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-info-circle mr-2"></i>Details</a>
+                         <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out"><i class="fas fa-calendar-alt mr-2"></i>Add to Calendar</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+     <section id="news" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-500">Latest Intel</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=News+Image+1" alt="News Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">News Article Title 1</h3>
+                        <p class="text-gray-400 text-sm mb-4"><i class="far fa-calendar-alt mr-2"></i>[Date]</p>
+                        <p class="text-gray-300 leading-relaxed text-base">
+                            Short snippet of the news article, giving a brief overview of the key points...
+                        </p>
+                        <a href="#" class="mt-5 inline-block text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out font-semibold"><i class="fas fa-arrow-right mr-2"></i>Read More</a>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=News+Image+2" alt="News Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">News Article Title 2</h3>
+                        <p class="text-gray-400 text-sm mb-4"><i class="far fa-calendar-alt mr-2"></i>[Date]</p>
+                        <p class="text-gray-300 leading-relaxed text-base">
+                            Short snippet of the news article, giving a brief overview of the key points...
+                        </p>
+                        <a href="#" class="mt-5 inline-block text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out font-semibold"><i class="fas fa-arrow-right mr-2"></i>Read More</a>
+                    </div>
+                </div>
+                 <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=News+Image+3" alt="News Title" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">News Article Title 3</h3>
+                        <p class="text-gray-400 text-sm mb-4"><i class="far fa-calendar-alt mr-2"></i>[Date]</p>
+                        <p class="text-gray-300 leading-relaxed text-base">
+                            Short snippet of the news article, giving a brief overview of the key points...
+                        </p>
+                        <a href="#" class="mt-5 inline-block text-blue-400 hover:text-blue-300 hover:underline transition duration-300 ease-in-out font-semibold"><i class="fas fa-arrow-right mr-2"></i>Read More</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-blue-500">Join Our Community</h2>
+            <div class="max-w-lg mx-auto bg-gray-900 rounded-lg shadow-xl p-8">
+                <p class="text-center text-gray-300 mb-8">Have a question or want to connect? Send us a message!</p>
+                <form>
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="shadow-inner appearance-none border border-gray-700 rounded w-full py-3 px-4 bg-gray-800 text-white leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 ease-in-out" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" class="shadow-inner appearance-none border border-gray-700 rounded w-full py-3 px-4 bg-gray-800 text-white leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 ease-in-out" placeholder="Your Email">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" rows="6" class="shadow-inner appearance-none border border-gray-700 rounded w-full py-3 px-4 bg-gray-800 text-white leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 ease-in-out" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 New Era. All rights reserved.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="Privacy Policy.html" class="hover:text-blue-500 transition duration-300 ease-in-out">Privacy Policy</a>
+                <span class="text-gray-600">|</span>
+                <a href="Terms of Service.html" class="hover:text-blue-500 transition duration-300 ease-in-out">Terms of Service</a>
+                 <span class="text-gray-600">|</span>
+                 <a href="#" class="hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitter mr-1"></i>Twitter</a>
+                 <a href="#" class="hover:text-blue-500 transition duration-300 ease-in-out"><i class="fab fa-twitch mr-1"></i>Twitch</a>
+            </div>
+            <p class="mt-4 text-xs text-gray-600">Code by ChainZ</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>

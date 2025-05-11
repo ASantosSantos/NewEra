@@ -1,0 +1,43 @@
+// JavaScript for website.html
+
+// Function to toggle the navigation menu
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    if (menu) {
+        menu.classList.toggle('active');
+    } else {
+        console.error('Navigation menu element not found.');
+    }
+}
+
+// Function to handle form submission
+function handleFormSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const formObject = Object.fromEntries(formData.entries());
+    console.log('Form Submitted:', formObject);
+
+    // Basic validation example
+    if (!formObject.name || !formObject.email) {
+        alert('Please fill out all required fields.');
+        return;
+    }
+
+    alert('Form submitted successfully!');
+}
+
+// Add event listener for menu toggle button
+const menuToggle = document.getElementById('menu-toggle');
+if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+} else {
+    console.error('Menu toggle button not found.');
+}
+
+// Add event listener for form submission
+const form = document.getElementById('contact-form');
+if (form) {
+    form.addEventListener('submit', handleFormSubmit);
+} else {
+    console.error('Contact form element not found.');
+}
